@@ -6,12 +6,12 @@ const About = () => {
   const { fontSizes, fontWeights, lineHeights, space } = theme;
 
   return (
-    <View style={{ paddingVertical: 22 }}>
+    <View style={{ paddingVertical: 16 }}>
       <Text
         style={{
           fontSize: fontSizes.xxxs,
+          fontWeight: fontWeights.extraBold,
           lineHeight: lineHeights.lg,
-          fontWeight: fontWeights.bold,
           paddingHorizontal: space.sm,
         }}
       >

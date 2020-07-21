@@ -22,8 +22,9 @@ const Header = () => {
           color: colors.white,
           fontSize: fontSizes.md,
           fontWeight: fontWeights.extraBold,
-          paddingHorizontal: 12,
-          paddingVertical: 4,
+          letterSpacing: 0.25,
+          paddingHorizontal: space.sm,
+          paddingVertical: 6,
         }}
       >
         Senior Front-End Developer
