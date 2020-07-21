@@ -1,17 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Font, PDFViewer } from "@react-pdf/renderer";
+import Document from "./components/Document";
+import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+Font.register({
+  family: "Manrope",
+  fonts: [
+    {
+      src: `/fonts/Manrope-Regular.ttf`,
+    },
+    {
+      src: `/fonts/Manrope-Bold.ttf`,
+      fontWeight: 700,
+    },
+    {
+      src: `/fonts/Manrope-ExtraBold.ttf`,
+      fontWeight: 800,
+    },
+  ],
+});
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const App = () => {
+  return (
+    <PDFViewer style={{ height: "100%", width: "100%" }}>
+      <Document />
+    </PDFViewer>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
