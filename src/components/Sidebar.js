@@ -24,20 +24,18 @@ const Sidebar = () => {
 
   return (
     <View
-      fixed
       style={{
         backgroundColor: colors.text,
         color: colors.white,
         height: "100%",
         padding: space.sm,
-        width: sizes.sidebar + space.sm * 2,
       }}
     >
       <Image
         src="jeremy-grancher.png"
         style={{ marginBottom: space.sm, width: sizes.sidebar }}
       />
-      <View style={{ justifyContent: "space-between", flexGrow: 1 }}>
+      <View style={{ flexGrow: 1, justifyContent: "space-between" }}>
         <View style={{ fontSize: fontSizes.xxxs }}>
           <Text style={titleStyles}>Contact</Text>
           <View style={listItemStyles}>

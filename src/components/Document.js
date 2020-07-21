@@ -6,33 +6,31 @@ import Sidebar from "./Sidebar";
 import theme from "../theme";
 
 const Document = () => {
-  const { colors, fonts, space } = theme;
+  const { colors, fonts, sizes, space } = theme;
 
   return (
-    <DocumentPDF>
+    <DocumentPDF
+      creator="Jeremy Grancher"
+      producer="Jeremy Grancher"
+      title="Jeremy's Grancher Resume"
+    >
       <Page
         size="A4"
         style={{
           backgroundColor: colors.white,
+          color: colors.text,
           flexDirection: "row",
+          fontFamily: fonts.body,
           padding: space.sm,
         }}
       >
         <View
-          style={{
-            backgroundColor: colors.background,
-            color: colors.text,
-            display: "flex",
-            flexDirection: "row",
-            flexGrow: 1,
-            fontFamily: fonts.body,
-            minHeight: "100%",
-          }}
+          style={{ backgroundColor: colors.background, flexDirection: "row" }}
         >
           <Sidebar />
-          <View>
+          <View style={{ padding: space.sm, width: sizes.main }}>
             <Header />
-            {/* <About /> */}
+            <About />
           </View>
         </View>
       </Page>

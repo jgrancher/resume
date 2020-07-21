@@ -63,5 +63,6 @@ export default {
   sizes: {
     icons: 10,
     sidebar: 120,
+    main: 411, // Page (595) - (Sidebar + padding) (152) - Page padding (32)
   },
 };
