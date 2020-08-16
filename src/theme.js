@@ -18,7 +18,7 @@ export default {
     ustwoGreen: "#14C04D",
   },
   fonts: {
-    body: "Manrope",
+    body: "TT Norms Pro",
     monospace: "Fira Code",
   },
   fontSizes: {

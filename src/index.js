@@ -5,17 +5,17 @@ import Document from "./components/Document";
 import "./index.css";
 
 Font.register({
-  family: "Manrope",
+  family: "TT Norms Pro",
   fonts: [
     {
-      src: `/fonts/Manrope-Regular.ttf`,
+      src: `/fonts/TT-Norms-Pro-Regular.ttf`,
     },
     {
-      src: `/fonts/Manrope-Bold.ttf`,
+      src: `/fonts/TT-Norms-Pro-Bold.ttf`,
       fontWeight: 700,
     },
     {
-      src: `/fonts/Manrope-ExtraBold.ttf`,
+      src: `/fonts/TT-Norms-Pro-ExtraBold.ttf`,
       fontWeight: 800,
     },
   ],
