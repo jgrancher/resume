@@ -16,11 +16,8 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the development mode.<br />
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.
 
 ### `yarn build`
 
@@ -32,4 +29,4 @@ See the latest version of the [document](https://github.com/jgrancher/resume/blo
 
 This resume was created "for fun" as an experiment, to play around with React-PDF.<br />
 
-You can also check out my [personal portfolio](https://jerem.app).
+You can also check out my [personal portfolio](https://jerem.app) that was built using the same theme.
