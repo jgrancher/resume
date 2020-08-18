@@ -1,5 +1,6 @@
 import React from "react";
-import { Image, Link, Text, View } from "@react-pdf/renderer";
+import { Link, Text, View } from "@react-pdf/renderer";
+import Image from "./Image";
 import { darken } from "polished";
 import { experiences } from "../data";
 import theme from "../theme";

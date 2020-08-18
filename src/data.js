@@ -6,7 +6,7 @@ export const experiences = [
     company: "ustwo",
     date: "2017 - Now",
     location: "Sydney",
-    logo: "/icon-ustwo.png",
+    logo: "icon-ustwo.png",
     title: "Senior full-stack developer",
     tasks: [
       {
@@ -39,7 +39,7 @@ export const experiences = [
     company: "holler",
     date: "2015 - 2017",
     location: "Sydney",
-    logo: "/icon-holler.png",
+    logo: "icon-holler.png",
     title: "Senior front-end developer",
     tasks: [
       {
@@ -56,7 +56,7 @@ export const experiences = [
     company: "Redfox Media",
     date: "2014 - 2015",
     location: "Sydney",
-    logo: "/icon-redfox-media.jpg",
+    logo: "icon-redfox-media.jpg",
     title: "Front-end developer",
     tasks: [
       {
@@ -73,7 +73,7 @@ export const experiences = [
     company: "Exomind (IT Consulting company)",
     date: "2012 - 2014",
     location: "Paris",
-    logo: "/icon-exomind.png",
+    logo: "icon-exomind.png",
     title: "Front-end & iOS developer",
     tasks: [
       {
@@ -98,11 +98,11 @@ export const experiences = [
 
 export const education = [
   {
-    logo: "/icon-hetic.png",
+    logo: "icon-hetic.png",
     degree: "Master in Digital Communication Engineering and Management",
   },
   {
-    logo: "/icon-cesi.png",
+    logo: "icon-cesi.png",
     degree: "Diploma in Information Technology",
   },
 ];
