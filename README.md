@@ -16,17 +16,14 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the development mode.<br />
-
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `yarn build`
 
 Builds the PDF document inside the `dist` folder.<br />
-
 See the latest version of the [document](https://github.com/jgrancher/resume/blob/master/dist/Resume.pdf).
 
 ## Learn More
 
 This resume was created "for fun" as an experiment, to play around with React-PDF.<br />
-
 You can also check out my [personal portfolio](https://jerem.app) that was built using the same theme.
