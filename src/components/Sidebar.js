@@ -32,7 +32,7 @@ const Sidebar = () => {
       }}
     >
       <Image
-        src="jeremy-grancher.png"
+        src="jeremy-grancher.jpg"
         style={{ marginBottom: space.sm, width: sizes.sidebar }}
       />
       <View style={{ flexGrow: 1, justifyContent: "space-between" }}>

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^1.6.8",
+    "polished": "^3.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"

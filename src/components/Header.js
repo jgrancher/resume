@@ -6,7 +6,7 @@ const Header = () => {
   const { colors, fontSizes, fontWeights, space } = theme;
 
   return (
-    <View style={{ marginVertical: space.sm }}>
+    <View style={{ marginBottom: space.sm }}>
       <Text
         style={{
           fontSize: fontSizes.xl,
@@ -22,9 +22,8 @@ const Header = () => {
           color: colors.white,
           fontSize: fontSizes.md,
           fontWeight: fontWeights.extraBold,
-          letterSpacing: 0.25,
-          paddingHorizontal: space.sm,
-          paddingVertical: 6,
+          letterSpacing: 0.5,
+          padding: space.xxs,
         }}
       >
         Senior Front-End Developer

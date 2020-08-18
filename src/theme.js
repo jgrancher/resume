@@ -2,6 +2,7 @@
 export default {
   colors: {
     white: "#FFFFFF",
+    black: "#000",
     text: "#3D3B44",
     textSecondary: "#C1C1C1",
     background: "#F8F8F8",
@@ -64,5 +65,6 @@ export default {
     icons: 10,
     sidebar: 120,
     main: 411, // Page (595) - (Sidebar + padding) (152) - Page padding (32)
+    logos: 42,
   },
 };
