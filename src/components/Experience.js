@@ -60,6 +60,7 @@ const Experience = () => {
                   {task.link && [
                     ` `,
                     <Link
+                      key={`link-${i}-${j}`}
                       src={task.link.url}
                       style={{ textDecoration: "underline" }}
                     >
