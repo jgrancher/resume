@@ -11,7 +11,7 @@ export const experiences = [
     tasks: [
       {
         copy:
-          "Architecture, development and maintenance of the Create with Google website, using Python on the backend, and leveraring Jinja macros on the front-end to keep a component-based approach.",
+          "Architecture, development and maintenance of the Create with Google website, using Python on the backend, and leveraging Jinja macros on the front-end to keep a component-based approach.",
       },
       {
         copy:
