@@ -23,7 +23,7 @@ export default {
     monospace: "Fira Code",
   },
   fontSizes: {
-    xxxxs: 8,
+    xxxxs: 6,
     xxxs: 10,
     xxs: 12,
     xs: 14,

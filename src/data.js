@@ -4,10 +4,10 @@ I take special care for little details, following best practices, web standards 
 export const experiences = [
   {
     company: "ustwo",
-    date: "2017 - Now",
+    date: "08/17 - Now",
     location: "Sydney",
     logo: "icon-ustwo.png",
-    title: "Senior full-stack developer",
+    title: "Senior product engineer",
     tasks: [
       {
         copy:
@@ -37,7 +37,7 @@ export const experiences = [
   },
   {
     company: "holler",
-    date: "2015 - 2017",
+    date: "05/15 - 08/17",
     location: "Sydney",
     logo: "icon-holler.png",
     title: "Senior front-end developer",
@@ -54,7 +54,7 @@ export const experiences = [
   },
   {
     company: "Redfox Media",
-    date: "2014 - 2015",
+    date: "10/14 - 05/15",
     location: "Sydney",
     logo: "icon-redfox-media.jpg",
     title: "Front-end developer",
@@ -71,7 +71,7 @@ export const experiences = [
   },
   {
     company: "Exomind (IT Consulting company)",
-    date: "2012 - 2014",
+    date: "10/12 - 09/14",
     location: "Paris",
     logo: "icon-exomind.png",
     title: "Front-end & iOS developer",
