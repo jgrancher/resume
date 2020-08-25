@@ -65,7 +65,7 @@ export const experiences = [
       },
       {
         copy:
-          " Creation of Wordpress themes and plugins in PHP, HTML5 and SCSS.",
+          "Creation of Wordpress themes and plugins in PHP, HTML5 and SCSS.",
       },
     ],
   },
