@@ -10,7 +10,7 @@ const Education = () => {
 
   const titleStyles = {
     color: colors.white,
-    backgroundColor: darken(0.1, colors.primary),
+    backgroundColor: darken(0.1, colors.qantasRed),
     fontSize: fontSizes.xxs,
     fontWeight: fontWeights.extraBold,
     marginBottom: space.sm,

@@ -9,7 +9,7 @@ const Experience = () => {
   const { colors, fontSizes, fontWeights, sizes, space } = theme;
 
   const titleStyles = {
-    backgroundColor: darken(0.1, colors.primary),
+    backgroundColor: darken(0.1, colors.cwgYellow),
     color: colors.white,
     fontSize: fontSizes.xxs,
     fontWeight: fontWeights.extraBold,
