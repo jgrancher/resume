@@ -1,5 +1,5 @@
 // Simplified replica of my portfolio's theme
-export default {
+const theme = {
   colors: {
     white: "#FFFFFF",
     black: "#000",
@@ -68,3 +68,5 @@ export default {
     logos: 42,
   },
 };
+
+export default theme;
