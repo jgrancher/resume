@@ -3,7 +3,7 @@
 </h1>
 <p align="center">
   <a href="https://github.com/jgrancher/resume/blob/master/dist/Resume.pdf">
-    <img alt="PDF document" src="https://user-images.githubusercontent.com/5517450/92097810-d5fee180-ee1b-11ea-8337-e6c329a01314.png" />
+    <img alt="PDF document" src="https://user-images.githubusercontent.com/5517450/123939223-44c8af00-d9db-11eb-9877-cb1b9f6704fc.png" />
   </a>
 </p>
 
