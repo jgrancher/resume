@@ -3,12 +3,37 @@ I take special care for little details, following best practices, web standards 
 
 export const experiences = [
   {
+    company: "Thinkmill",
+    date: "02/21 - Now",
+    location: "Sydney",
+    logo: "icon-thinkmill.png",
+    title: "Senior developer",
+    tasks: [
+      {
+        copy:
+          "Maintenance and evolution of a UI platform and design system for Enlitic using React, Storybook & Emotion:",
+          link: {
+            label: 'enlitic.com',
+            url: 'https://www.enlitic.com'
+          }
+      },
+    ],
+  },
+  {
     company: "ustwo",
-    date: "08/17 - Now",
+    date: "08/17 - 01/21",
     location: "Sydney",
     logo: "icon-ustwo.png",
     title: "Senior product engineer",
     tasks: [
+      {
+        copy:
+          "Development of Semi Permanent's new website using TS, Next.js, Framer-Motion and Contentful's GraphQL API:",
+          link: {
+            label: 'semipermanent.com',
+            url: 'https://semipermanent.com'
+          }
+      },
       {
         copy:
           "Architecture, development and maintenance of the Create with Google website, using Python on the backend, and leveraging Jinja macros on the front-end to keep a component-based approach.",
@@ -24,14 +49,6 @@ export const experiences = [
           label: "cardcompanion.qantas.com",
           url: "https://cardcompanion.qantas.com",
         },
-      },
-      {
-        copy:
-          "Creation of component libraries and following best practices\nwhenever possible, using Storybook, Emotion & Styled-System.",
-      },
-      {
-        copy:
-          "Recurrent collaboration with designers to provide feedbacks,\nestimations and workarounds - but also animations, often using a mix of SVG, CSS and JavaScript.",
       },
     ],
   },
@@ -56,16 +73,12 @@ export const experiences = [
     company: "Redfox Media",
     date: "10/14 - 05/15",
     location: "Sydney",
-    logo: "icon-redfox-media.jpg",
+    logo: "icon-redfox-media.png",
     title: "Front-end developer",
     tasks: [
       {
         copy:
-          "Development of WordPress websites for small to medium businesses.",
-      },
-      {
-        copy:
-          "Creation of Wordpress themes and plugins in PHP, HTML5 and SCSS.",
+          "Development of WordPress custom themes and plugins.",
       },
     ],
   },

@@ -89,6 +89,17 @@ const Sidebar = () => {
           </Text>
           <View style={listItemStyles}>
             <Image
+              src="icon-project-semi-permanent.png"
+              style={{ ...imageStyles, width: 12 }}
+            />
+            <Text>
+              <Link src="https://semipermanent.com">
+                Semi Permanent
+              </Link>
+            </Text>
+          </View>
+          <View style={listItemStyles}>
+            <Image
               src="icon-project-cwg.png"
               style={{ ...imageStyles, width: 12 }}
             />
@@ -116,15 +127,6 @@ const Sidebar = () => {
               <Link src="https://create.withgoogle.com/tools/audience-connect">
                 Audience Connect
               </Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-stv.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://succailure.tv">Succailure TV</Link>
             </Text>
           </View>
         </View>
