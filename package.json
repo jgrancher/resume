@@ -19,6 +19,7 @@
     "@testing-library/user-event": "^13.1.9"
   },
   "scripts": {
+    "dev": "yarn start",
     "start": "react-scripts start",
     "build-file": "BUILD_FILE=true babel-node --presets @babel/preset-env,@babel/preset-react -- ./scripts/build.js ",
     "build": "npm run build-file",
