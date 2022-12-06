@@ -85,17 +85,24 @@ const Sidebar = () => {
         </View>
         <View style={{ fontSize: fontSizes.xxxs }}>
           <Text style={{ ...titleStyles, marginTop: space.md }}>
-            Last projects
+            Latest projects
           </Text>
+          <View style={listItemStyles}>
+            <Image
+              src="icon-project-swimming.png"
+              style={{ ...imageStyles, width: 12 }}
+            />
+            <Text>
+              <Link src="https://www.swimming.org.au">Swimming Australia</Link>
+            </Text>
+          </View>
           <View style={listItemStyles}>
             <Image
               src="icon-project-semi-permanent.png"
               style={{ ...imageStyles, width: 12 }}
             />
             <Text>
-              <Link src="https://semipermanent.com">
-                Semi Permanent
-              </Link>
+              <Link src="https://semipermanent.com">Semi Permanent</Link>
             </Text>
           </View>
           <View style={listItemStyles}>
@@ -116,17 +123,6 @@ const Sidebar = () => {
             />
             <Text>
               <Link src="https://cardcompanion.qantas.com">Card Companion</Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-ac.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://create.withgoogle.com/tools/audience-connect">
-                Audience Connect
-              </Link>
             </Text>
           </View>
         </View>

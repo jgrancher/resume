@@ -20,7 +20,7 @@ const Experience = () => {
   const listItemStyles = {
     flexDirection: "row",
     fontSize: fontSizes.xxxs,
-    marginBottom: space.sm,
+    marginBottom: space.xs,
   };
 
   const imageStyles = {

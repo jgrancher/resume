@@ -3,6 +3,38 @@ I take special care for little details and code hygiene.`;
 
 export const experiences = [
   {
+    company: "Upgrowth",
+    date: "12/22 - Now",
+    location: "Sydney",
+    logo: "icon-upgrowth.png",
+    title: "Senior developer (contract)",
+    tasks: [
+      {
+        copy: "Development of BigW e-commerce storefront using Next.js, Typescript & SCSS Modules:",
+        link: {
+          label: "bigw.com.au",
+          url: "https://www.bigw.com.au",
+        },
+      },
+    ],
+  },
+  {
+    company: "Publicis",
+    date: "06/22 - 10/22",
+    location: "Sydney",
+    logo: "icon-publicis.png",
+    title: "Senior front-end developer (contract)",
+    tasks: [
+      {
+        copy: "Development of Swimming Australia's new website using Next.js, Wordpress (headless), Emotion & Chakra-UI:",
+        link: {
+          label: "swimming.org.au",
+          url: "https://www.swimming.org.au",
+        },
+      },
+    ],
+  },
+  {
     company: "Nightjar",
     date: "02/22 - 06/22",
     location: "Sydney",
@@ -23,7 +55,7 @@ export const experiences = [
     date: "02/21 - 02/22",
     location: "Sydney",
     logo: "icon-thinkmill.png",
-    title: "Senior developer",
+    title: "Senior software engineer",
     tasks: [
       {
         copy: "Maintenance and evolution of a UI platform and design system for Enlitic using React, Storybook & Emotion.",
@@ -52,11 +84,16 @@ export const experiences = [
         },
       },
       {
-        copy: "Architecture, development and maintenance of the Create with Google website, using Python on the backend, and leveraging Jinja macros on the front-end to keep a component-based approach.",
+        copy: "Prototyping and development of several Create with Google products using Python, Preact, Electron, Firebase:",
+        link: {
+          label: "create.withgoogle.com",
+          url: "https://create.withgoogle.com",
+        },
       },
-      {
-        copy: "Prototyping and creation of Audience Connect for Google, a desktop application enhancing Google Slides with offline videos and real-time interactions with the audience. Used Electron, Preact and Firebase.",
-      },
+      // Hidden for now, to leave space for the other experiences...
+      // {
+      //   copy: "Prototyping and creation of Audience Connect for Google, a desktop application enhancing Google Slides with offline videos and real-time interactions with the audience. Used Electron, Preact and Firebase.",
+      // },
       {
         copy: 'Development of the Qantas loyalty platform "Card Companion" with React, Next.js, GraphQL and Apollo:',
         link: {
@@ -71,10 +108,10 @@ export const experiences = [
     date: "05/15 - 08/17",
     location: "Sydney",
     logo: "icon-holler.png",
-    title: "Senior front-end developer",
+    title: "Front-end developer",
     tasks: [
       {
-        copy: "Creation of a series of websites for Audi Australia, including their main loyalty portal developed with React, React-Router and Redux:\n",
+        copy: "Creation of websites for Audi Australia, including their main loyalty portal developed with React, React-Router and Redux:",
         link: {
           label: "myaudi.com.au",
           url: "https://myaudi.com.au/",

@@ -27,7 +27,11 @@ const Document = () => {
         }}
       >
         <View
-          style={{ backgroundColor: colors.background, flexDirection: "row" }}
+          style={{
+            backgroundColor: colors.background,
+            flexDirection: "row",
+            height: "100%",
+          }}
         >
           <Sidebar />
           <View
@@ -39,8 +43,10 @@ const Document = () => {
           >
             <Header />
             <About />
-            <Experience />
-            <Education />
+            <View style={{ flex: 1, justifyContent: "space-between" }}>
+              <Experience />
+              <Education />
+            </View>
           </View>
         </View>
       </Page>
