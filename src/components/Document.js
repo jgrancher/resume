@@ -1,8 +1,6 @@
 import React from "react";
 import { Document as DocumentPDF, Page, View } from "@react-pdf/renderer";
-import About from "./About";
-import Education from "./Education";
-import Experience from "./Experience";
+import CoverLetter from "./CoverLetter";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import theme from "../theme";
@@ -13,8 +11,8 @@ const Document = () => {
   return (
     <DocumentPDF
       creator="Jeremy Grancher"
-      keywords="front-end, full-stack, developer, cv, resume"
-      title="Jeremy Grancher's Resume"
+      keywords="front-end, full-stack, developer, cover letter"
+      title="Jeremy Grancher's cover letter"
     >
       <Page
         size="A4"
@@ -42,11 +40,7 @@ const Document = () => {
             }}
           >
             <Header />
-            <About />
-            <View style={{ flex: 1, justifyContent: "space-between" }}>
-              <Experience />
-              <Education />
-            </View>
+            <CoverLetter />
           </View>
         </View>
       </Page>

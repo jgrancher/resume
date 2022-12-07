@@ -51,98 +51,14 @@ const Sidebar = () => {
           </View>
           <View style={listItemStyles}>
             <Image src="icon-pin.png" style={imageStyles} />
-            <Text>Sydney</Text>
-          </View>
-        </View>
-        <View style={{ fontSize: fontSizes.xxxs }}>
-          <Text style={{ ...titleStyles, marginTop: space.md }}>
-            On the Internets
-          </Text>
-          <View style={listItemStyles}>
-            <Image src="icon-chrome.png" style={imageStyles} />
-            <Text>
-              <Link src="https://jerem.app">jerem.app</Link>
-            </Text>
+            <View>
+              <Text>7/118 Curlewis Street,</Text>
+              <Text>Bondi Beach NSW 2026</Text>
+            </View>
           </View>
           <View style={listItemStyles}>
-            <Image src="icon-github.png" style={imageStyles} />
-            <Text>
-              <Link src="https://github.com/jgrancher">jgrancher</Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image src="icon-twitter.png" style={imageStyles} />
-            <Text>
-              <Link src="https://twitter.com/jgrancher">@jgrancher</Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image src="icon-linkedin.png" style={imageStyles} />
-            <Text>
-              <Link src="https://www.linkedin.com/in/jgrancher">jgrancher</Link>
-            </Text>
-          </View>
-        </View>
-        <View style={{ fontSize: fontSizes.xxxs }}>
-          <Text style={{ ...titleStyles, marginTop: space.md }}>
-            Latest projects
-          </Text>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-swimming.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://www.swimming.org.au">Swimming Australia</Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-semi-permanent.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://semipermanent.com">Semi Permanent</Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-cwg.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://create.withgoogle.com">
-                Create with Google
-              </Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-qcc.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://cardcompanion.qantas.com">Card Companion</Link>
-            </Text>
-          </View>
-        </View>
-        <View style={{ fontSize: fontSizes.xxxs }}>
-          <Text style={{ ...titleStyles, marginTop: space.md }}>Skills</Text>
-          <View style={listItemStyles}>
-            <Image src="icon-typescript.png" style={imageStyles} />
-            <Text>JS &amp; TypeScript</Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image src="icon-react.png" style={imageStyles} />
-            <Text>React &amp; React Native</Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image src="icon-scss.png" style={imageStyles} />
-            <Text>SCSS &amp; CSS-in-JS</Text>
-          </View>
-          <View style={{ ...listItemStyles, marginBottom: 0 }}>
-            <Image src="icon-graphql.png" style={imageStyles} />
-            <Text>Node.js &amp; GraphQL</Text>
+            <Image src="icon-pin.png" style={imageStyles} />
+            <Text>French & Australian citizen</Text>
           </View>
         </View>
       </View>
