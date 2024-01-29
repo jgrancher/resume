@@ -3,8 +3,24 @@ I take special care for little details and code hygiene.`;
 
 export const experiences = [
   {
+    company: "Userkind",
+    date: "06/23 - Now",
+    location: "Sydney",
+    logo: "icon-userkind.jpeg",
+    title: "Web developer (freelance)",
+    tasks: [
+      {
+        copy: "Development of bespoke websites using Next.js and headless CMSs like Sanity or Builder.io, and headless storefronts for Shopify. Animations done with GSAP or Framer Motion, ie:",
+        link: {
+          label: "morcofresh.com.au",
+          url: "https://www.morcofresh.com.au",
+        },
+      },
+    ],
+  },
+  {
     company: "Upgrowth",
-    date: "12/22 - Now",
+    date: "12/22 - 05/23",
     location: "Sydney",
     logo: "icon-upgrowth.png",
     title: "Senior developer (contract)",
@@ -163,8 +179,8 @@ export const education = [
     logo: "icon-hetic.png",
     degree: "Master in Digital Communication Engineering and Management",
   },
-  {
-    logo: "icon-cesi.png",
-    degree: "Diploma in Information Technology",
-  },
+  // {
+  //   logo: "icon-cesi.png",
+  //   degree: "Diploma in Information Technology",
+  // },
 ];
