@@ -77,7 +77,7 @@ export const experiences = [
         copy: "Maintenance and evolution of a UI platform and design system for Enlitic using React, Storybook & Emotion.",
       },
       {
-        copy: "Development of a new filtering features for SafetyCulture's main web application iAuditor using React, Redux and Jest:",
+        copy: "Development of new filtering features for SafetyCulture's main web application iAuditor using React, Redux and Jest:",
         link: {
           label: "safetyculture.com",
           url: "https://safetyculture.com/",
