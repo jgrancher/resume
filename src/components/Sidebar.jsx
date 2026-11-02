@@ -23,6 +23,12 @@ const Sidebar = () => {
     width: sizes.icons,
   };
 
+  // Overrides react-pdf's default link styles (blue & underlined)
+  const linkStyles = {
+    color: colors.white,
+    textDecoration: "none",
+  };
+
   return (
     <View
       style={{
@@ -42,7 +48,9 @@ const Sidebar = () => {
           <View style={listItemStyles}>
             <Image src="icon-mail.png" style={imageStyles} />
             <Text>
-              <Link src="mailto:jgrancher@gmail.com">jgrancher@gmail.com</Link>
+              <Link src="mailto:jgrancher@gmail.com" style={linkStyles}>
+                jgrancher@gmail.com
+              </Link>
             </Text>
           </View>
           <View style={listItemStyles}>
@@ -61,25 +69,36 @@ const Sidebar = () => {
           <View style={listItemStyles}>
             <Image src="icon-chrome.png" style={imageStyles} />
             <Text>
-              <Link src="https://jerem.app">jerem.app</Link>
+              <Link src="https://jerem.app" style={linkStyles}>
+                jerem.app
+              </Link>
             </Text>
           </View>
           <View style={listItemStyles}>
             <Image src="icon-github.png" style={imageStyles} />
             <Text>
-              <Link src="https://github.com/jgrancher">jgrancher</Link>
+              <Link src="https://github.com/jgrancher" style={linkStyles}>
+                jgrancher
+              </Link>
             </Text>
           </View>
           <View style={listItemStyles}>
             <Image src="icon-twitter.png" style={imageStyles} />
             <Text>
-              <Link src="https://twitter.com/jgrancher">@jgrancher</Link>
+              <Link src="https://twitter.com/jgrancher" style={linkStyles}>
+                @jgrancher
+              </Link>
             </Text>
           </View>
           <View style={listItemStyles}>
             <Image src="icon-linkedin.png" style={imageStyles} />
             <Text>
-              <Link src="https://www.linkedin.com/in/jgrancher">jgrancher</Link>
+              <Link
+                src="https://www.linkedin.com/in/jgrancher"
+                style={linkStyles}
+              >
+                jgrancher
+              </Link>
             </Text>
           </View>
         </View>
@@ -93,7 +112,9 @@ const Sidebar = () => {
               style={{ ...imageStyles, width: 12 }}
             />
             <Text>
-              <Link src="https://www.swimming.org.au">Swimming Australia</Link>
+              <Link src="https://www.swimming.org.au" style={linkStyles}>
+                Swimming Australia
+              </Link>
             </Text>
           </View>
           <View style={listItemStyles}>
@@ -102,7 +123,9 @@ const Sidebar = () => {
               style={{ ...imageStyles, width: 12 }}
             />
             <Text>
-              <Link src="https://semipermanent.com">Semi Permanent</Link>
+              <Link src="https://semipermanent.com" style={linkStyles}>
+                Semi Permanent
+              </Link>
             </Text>
           </View>
           <View style={listItemStyles}>
@@ -111,7 +134,7 @@ const Sidebar = () => {
               style={{ ...imageStyles, width: 12 }}
             />
             <Text>
-              <Link src="https://create.withgoogle.com">
+              <Link src="https://create.withgoogle.com" style={linkStyles}>
                 Create with Google
               </Link>
             </Text>
@@ -122,7 +145,9 @@ const Sidebar = () => {
               style={{ ...imageStyles, width: 12 }}
             />
             <Text>
-              <Link src="https://cardcompanion.qantas.com">Card Companion</Link>
+              <Link src="https://cardcompanion.qantas.com" style={linkStyles}>
+                Card Companion
+              </Link>
             </Text>
           </View>
         </View>
