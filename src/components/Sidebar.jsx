@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Text, View } from "@react-pdf/renderer";
 import Image from "./Image";
 import {
+  ClaudeIcon,
   FranceFlagIcon,
   HeartIcon,
   JapanFlagIcon,
@@ -152,9 +153,13 @@ const Sidebar = () => {
             <Image src="icon-scss.png" style={imageStyles} />
             <Text>CSS &amp; design systems</Text>
           </View>
-          <View style={{ ...listItemStyles, marginBottom: 0 }}>
+          <View style={listItemStyles}>
             <Image src="icon-graphql.png" style={imageStyles} />
             <Text>GraphQL &amp; REST APIs</Text>
+          </View>
+          <View style={{ ...listItemStyles, marginBottom: 0 }}>
+            <ClaudeIcon style={imageStyles} />
+            <Text>Agentic coding &amp; MCP</Text>
           </View>
         </View>
       </View>
