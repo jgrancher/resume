@@ -50,21 +50,21 @@ const Experience = () => {
                   {e.company}
                 </Text>
               )}
-              {e.date && (
-                <Text style={{ fontSize: fontSizes.xxxxs }}>{e.date}</Text>
-              )}
-              {e.location && (
-                <Text style={{ fontSize: fontSizes.xxxxs }}>{e.location}</Text>
-              )}
             </View>
             <View style={{ marginLeft: space.sm, maxWidth: 312 }}>
+              <Text style={{ fontWeight: fontWeights.bold }}>
+                {e.title} @ {e.company}
+              </Text>
+              {/* Dates & location sit right under the title, so that they stay attached to it when parsed */}
               <Text
                 style={{
-                  fontWeight: fontWeights.bold,
+                  color: colors.text,
+                  fontSize: fontSizes.xxxxs,
                   marginBottom: space.xxs,
+                  marginTop: 2,
                 }}
               >
-                {e.title} @ {e.company}
+                {[e.date, e.location].filter(Boolean).join(" · ")}
               </Text>
               {e.tasks.map((task, j) => (
                 <Text key={`${i}-${j}`} style={{ marginBottom: space.xs }}>

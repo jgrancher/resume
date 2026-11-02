@@ -11,8 +11,8 @@ const About = () => {
       <Text
         style={{
           fontSize: fontSizes.xxxs,
-          fontWeight: fontWeights.extraBold,
-          lineHeight: lineHeights.sm,
+          fontWeight: fontWeights.bold,
+          lineHeight: lineHeights.md,
           paddingHorizontal: space.sm,
         }}
       >

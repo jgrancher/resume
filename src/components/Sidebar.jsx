@@ -82,7 +82,7 @@ const Sidebar = () => {
           </View>
           <View style={listItemStyles}>
             <Image src="icon-phone.png" style={imageStyles} />
-            <Text>0478 011 164</Text>
+            <Text>+61 478 011 164</Text>
           </View>
           <View style={listItemStyles}>
             <Image src="icon-pin.png" style={imageStyles} />
@@ -109,7 +109,7 @@ const Sidebar = () => {
             <Image src="icon-github.png" style={imageStyles} />
             <Text>
               <Link src="https://github.com/jgrancher" style={linkStyles}>
-                jgrancher
+                github.com/jgrancher
               </Link>
             </Text>
           </View>
@@ -128,7 +128,7 @@ const Sidebar = () => {
                 src="https://www.linkedin.com/in/jgrancher"
                 style={linkStyles}
               >
-                jgrancher
+                linkedin.com/in/jgrancher
               </Link>
             </Text>
           </View>

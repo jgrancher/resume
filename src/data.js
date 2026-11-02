@@ -1,5 +1,5 @@
-export const about = `I am a senior software engineer with 14 years of experience building for the web, from award-winning websites to e-commerce and generative AI products.
-I own features end-to-end, from shaping the problem with product and design to shipping and iterating, and I still take special care of the little details and interactions.`;
+export const about = `Senior software engineer with 14 years of experience building web products: most recently generative AI at Leonardo.ai and Canva, and e-commerce storefronts and loyalty platforms before that.
+I lead features from 0 to 1 and own them end-to-end, from shaping the problem with product and design to shipping and iterating, and I still take special care of the little details and interactions.`;
 
 export const experiences = [
   {
@@ -10,19 +10,19 @@ export const experiences = [
     title: "Senior software engineer",
     tasks: [
       {
-        copy: "Shipped Canva's official n8n node, a verified community node covering the whole Canva Connect API, with launch workflow templates. Owned it from spec to npm release and user support:",
+        copy: "Built Canva's official n8n node from 0 to 1: a verified community node covering the whole Canva Connect API (TypeScript, OAuth 2.0, REST), with launch workflow templates. Owned it from spec to npm release and user support:",
         link: {
           label: "n8n-nodes-canva",
           url: "https://github.com/canva-sdks/n8n-nodes-canva",
         },
       },
       {
-        copy: "Maintaining the Canva MCP server used in ChatGPT and Claude: interactive widgets (background remover, AI video with in-widget upgrade and top-up flows), funnel analytics, localisation and partner support.",
+        copy: "Maintain Canva's MCP server used in ChatGPT and Claude: interactive widgets (background remover, AI video), in-widget upgrade and top-up purchase flows, funnel analytics, localisation and partner support.",
       },
     ],
   },
   {
-    company: "Leonardo.ai",
+    company: "Leonardo.ai (acquired by Canva)",
     date: "07/24 - 05/26",
     location: "Sydney",
     logo: "icon-leonardo.png",
@@ -30,6 +30,9 @@ export const experiences = [
     tasks: [
       {
         copy: 'Initiated and led "Model Matrix", a schema-driven platform where one config file drives validation, UI and API mapping, turning each new AI model launch (Veo 3.1, Nano Banana, Kling…) from bespoke code into configuration.',
+      },
+      {
+        copy: "Set its architecture and progressive rollout across image and video generation, mentored teammates through the first implementations, and wrote the guides that let other squads add new models on their own.",
       },
       {
         copy: "Owned the web side of flagship launches such as video generation and token-based pricing, working with product, design and backend, and acting as the go-to web expert for other squads:",
@@ -48,7 +51,7 @@ export const experiences = [
     title: "Web developer (freelance)",
     tasks: [
       {
-        copy: "Built bespoke websites using Next.js and headless CMSs like Sanity or Builder.io, with GSAP or Framer Motion animations, ie:",
+        copy: "Built bespoke websites using Next.js and headless CMSs like Sanity or Builder.io, with GSAP or Framer Motion animations, e.g.",
         link: {
           label: "morcofresh.com.au",
           url: "https://www.morcofresh.com.au",
@@ -67,14 +70,11 @@ export const experiences = [
     title: "Senior developer (contract)",
     tasks: [
       {
-        copy: "Developed BigW's e-commerce storefront using Next.js, TypeScript & SCSS Modules:",
+        copy: "Shipped features on BigW's e-commerce storefront, in a large multi-team codebase for one of Australia's biggest retailers, using Next.js, TypeScript & SCSS Modules, with a focus on performance and accessibility:",
         link: {
           label: "bigw.com.au",
           url: "https://www.bigw.com.au",
         },
-      },
-      {
-        copy: "Shipped features in a large multi-team codebase for one of Australia's biggest retailers, with a focus on performance and accessibility.",
       },
     ],
   },
@@ -86,14 +86,11 @@ export const experiences = [
     title: "Senior front-end developer (contract)",
     tasks: [
       {
-        copy: "Developed Swimming Australia's new website using Next.js, headless WordPress, Emotion & Chakra-UI:",
+        copy: "Developed Swimming Australia's new website and the component library letting editors compose their own pages, using Next.js, headless WordPress, Emotion & Chakra UI:",
         link: {
           label: "swimming.org.au",
           url: "https://www.swimming.org.au",
         },
-      },
-      {
-        copy: "Built the component library and content blocks letting editors compose their own pages in WordPress.",
       },
     ],
   },
@@ -105,14 +102,11 @@ export const experiences = [
     title: "Senior creative developer (contract)",
     tasks: [
       {
-        copy: "Developed bespoke and award-winning websites using Next.js, Sanity.io, Shopify (headless), Tailwind and GSAP animations:",
+        copy: "Developed bespoke and award-winning websites side by side with designers, using Next.js, Sanity.io, Shopify (headless), Tailwind and GSAP animations:",
         link: {
           label: "nightjar.co",
           url: "https://nightjar.co",
         },
-      },
-      {
-        copy: "Worked side by side with designers to prototype, refine and polish interactions and animations.",
       },
     ],
   },
@@ -143,14 +137,14 @@ export const experiences = [
     title: "Senior product engineer",
     tasks: [
       {
-        copy: "Development of Semi Permanent's new website using TS, Next.js, Framer-Motion and Contentful's GraphQL API:",
+        copy: "Built Semi Permanent's new website using TypeScript, Next.js, Framer Motion and Contentful's GraphQL API:",
         link: {
           label: "semipermanent.com",
           url: "https://semipermanent.com",
         },
       },
       {
-        copy: "Prototyped and shipped Create with Google products, including Audience Connect, an Electron app adding offline videos and live audience interactions to Google Slides (Python, Preact, Firebase):",
+        copy: "Prototyped and shipped Create with Google products, including Audience Connect, an Electron app adding offline videos and real-time audience interactions to Google Slides (Python, Preact, Firebase):",
         link: {
           label: "create.withgoogle.com",
           url: "https://create.withgoogle.com",
@@ -201,7 +195,7 @@ export const experiences = [
       {
         copy: "Developed, with TBWA, the promotional mobile website for Paco Rabanne's Invictus fragrance, using GSAP:",
         link: {
-          label: "FWA case study.",
+          label: "FWA case study",
           url: "https://thefwa.com/cases/invictus-award-by-paco-rabanne",
         },
       },
@@ -217,7 +211,7 @@ export const languages = [
 
 export const hobbies = [
   { icon: "dumbbell", label: "Gym & running" },
-  { icon: "invader", label: "Video games" },
+  { icon: "invader", label: "Collecting retro games" },
   { icon: "music", label: "Electronic music" },
 ];
 

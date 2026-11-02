@@ -44,23 +44,19 @@ const Education = () => {
           >
             <View style={{ width: sizes.logos }}>
               <Image src={e.logo} style={imageStyles} />
-              {e.date && (
-                <Text style={{ fontSize: fontSizes.xxxxs }}>{e.date}</Text>
-              )}
-              {e.location && (
-                <Text style={{ fontSize: fontSizes.xxxxs }}>{e.location}</Text>
-              )}
             </View>
             <View wrap={false} style={{ marginLeft: space.sm, maxWidth: 312 }}>
+              <Text style={{ fontWeight: fontWeights.bold }}>{e.degree}</Text>
+              {/* Same as the experiences, the details sit right under the degree */}
               <Text
                 style={{
-                  fontWeight: fontWeights.bold,
-                  marginBottom: space.xxs,
+                  color: colors.text,
+                  fontSize: fontSizes.xxxxs,
+                  marginTop: 2,
                 }}
               >
-                {e.degree}
+                {[e.school, e.date, e.location].filter(Boolean).join(" · ")}
               </Text>
-              {e.school && <Text>{e.school}</Text>}
             </View>
           </View>
         ))}
