@@ -26,7 +26,7 @@ const Header = () => {
           padding: space.xxs,
         }}
       >
-        Senior Product Engineer
+        Senior Software Engineer
       </Text>
     </View>
   );

@@ -13,7 +13,7 @@ const Document = () => {
   return (
     <DocumentPDF
       creator="Jeremy Grancher"
-      keywords="product engineer, full-stack, front-end, developer, cv, resume"
+      keywords="software engineer, product engineer, full-stack, front-end, developer, cv, resume"
       title="Jeremy Grancher's Resume"
     >
       <Page

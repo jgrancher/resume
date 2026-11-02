@@ -1,4 +1,4 @@
-export const about = `I am a senior product engineer with 14 years of experience building for the web, from award-winning websites to e-commerce and generative AI products.
+export const about = `I am a senior software engineer with 14 years of experience building for the web, from award-winning websites to e-commerce and generative AI products.
 I own features end-to-end, from shaping the problem with product and design to shipping and iterating, and I still take special care of the little details and interactions.`;
 
 export const experiences = [
