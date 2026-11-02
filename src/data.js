@@ -1,5 +1,5 @@
-export const about = `Senior software engineer with 14 years of experience building web products: most recently generative AI at Leonardo.ai and Canva, and e-commerce storefronts and loyalty platforms before that.
-I lead features from 0 to 1 and own them end-to-end, from shaping the problem with product and design to shipping and iterating, and I still take special care of the little details and interactions.`;
+export const about = `I've been building for the web for 14 years. Lately that's meant generative AI at Leonardo.ai and Canva, and before that, e-commerce storefronts and loyalty platforms.
+I like taking features from 0 to 1: working the problem out with product and design, shipping it, then iterating on it. And I still care a lot about the small details that make an interface feel right.`;
 
 export const experiences = [
   {
@@ -10,14 +10,14 @@ export const experiences = [
     title: "Senior software engineer",
     tasks: [
       {
-        copy: "Built Canva's official n8n node from scratch: a verified community node covering the whole Canva Connect API (TypeScript, OAuth 2.0, REST), with launch workflow templates. Owned it from spec to npm release and user support:",
+        copy: "Built Canva's official n8n node from scratch, now a verified community node covering the whole Canva Connect API (TypeScript, OAuth 2.0, REST). I wrote the spec, published it on npm with launch templates, and handle user support:",
         link: {
           label: "n8n-nodes-canva",
           url: "https://github.com/canva-sdks/n8n-nodes-canva",
         },
       },
       {
-        copy: "Maintain Canva's MCP server used in ChatGPT and Claude: interactive widgets (background remover, AI video), in-widget upgrade and top-up purchase flows, funnel analytics, localisation and partner support.",
+        copy: "Maintain Canva's MCP server in ChatGPT and Claude. I build interactive widgets like the background remover and AI video, along with the upgrade and top-up purchases inside them, and look after analytics, localisation and partner support.",
       },
     ],
   },
@@ -29,13 +29,13 @@ export const experiences = [
     title: "Senior product engineer (web)",
     tasks: [
       {
-        copy: 'Initiated and led "Model Matrix", a JSON schema-driven platform where one config file drives validation, UI and API mapping, turning each new AI model launch (Veo 3.1, Nano Banana, Kling…) from bespoke code into configuration.',
+        copy: 'Started and led "Model Matrix", a JSON schema-driven platform where one config file per model handles validation, UI and API mapping. Adding a new AI model (Veo 3.1, Nano Banana, Kling…) became a config change rather than custom code.',
       },
       {
-        copy: "Set its architecture and progressive rollout across image and video generation, mentored teammates through the first implementations, and wrote the guides that let other squads add new models on their own.",
+        copy: "Designed its architecture and rolled it out gradually across image and video generation. I mentored teammates through the first implementations and wrote the guides other squads used to add models themselves.",
       },
       {
-        copy: "Owned the web side of flagship launches such as video generation and token-based pricing, working with product, design and backend, and acting as the go-to web expert for other squads:",
+        copy: "Owned the web side of big launches like video generation and token-based pricing, alongside product, design and backend. Other squads came to me with their web questions:",
         link: {
           label: "leonardo.ai",
           url: "https://leonardo.ai",
@@ -51,14 +51,14 @@ export const experiences = [
     title: "Web developer (freelance)",
     tasks: [
       {
-        copy: "Built bespoke websites using Next.js and headless CMSs like Sanity or Builder.io, with GSAP or Framer Motion animations, e.g.",
+        copy: "Built custom websites on Next.js and headless CMSs like Sanity and Builder.io, with GSAP or Framer Motion for animation. One example:",
         link: {
           label: "morcofresh.com.au",
           url: "https://www.morcofresh.com.au",
         },
       },
       {
-        copy: "Built headless Shopify storefronts and the content models behind them, so clients could run their stores without a developer.",
+        copy: "Set up headless Shopify stores and their content models, so clients could run things without needing a developer.",
       },
     ],
   },
@@ -70,7 +70,7 @@ export const experiences = [
     title: "Senior developer (contract)",
     tasks: [
       {
-        copy: "Shipped features on BigW's e-commerce storefront, in a large multi-team codebase for one of Australia's biggest retailers, using Next.js, TypeScript & SCSS Modules, with a focus on performance and accessibility:",
+        copy: "Shipped features on BigW's storefront, a big multi-team codebase for one of Australia's largest retailers. Worked in Next.js, TypeScript and SCSS Modules, paying close attention to performance and accessibility:",
         link: {
           label: "bigw.com.au",
           url: "https://www.bigw.com.au",
@@ -86,7 +86,7 @@ export const experiences = [
     title: "Senior front-end developer (contract)",
     tasks: [
       {
-        copy: "Developed Swimming Australia's new website and the component library letting editors compose their own pages, using Next.js, headless WordPress, Emotion & Chakra UI:",
+        copy: "Built Swimming Australia's new website and a component library editors use to put together their own pages, with Next.js, headless WordPress, Emotion and Chakra UI:",
         link: {
           label: "swimming.org.au",
           url: "https://www.swimming.org.au",
@@ -102,7 +102,7 @@ export const experiences = [
     title: "Senior creative developer (contract)",
     tasks: [
       {
-        copy: "Developed bespoke and award-winning websites side by side with designers, using Next.js, Sanity.io, Shopify (headless), Tailwind and GSAP animations:",
+        copy: "Worked shoulder to shoulder with designers on award-winning websites, built with Next.js, Sanity, headless Shopify, Tailwind and GSAP:",
         link: {
           label: "nightjar.co",
           url: "https://nightjar.co",
@@ -118,14 +118,14 @@ export const experiences = [
     title: "Senior software engineer",
     tasks: [
       {
-        copy: "Built new filtering features for SafetyCulture's iAuditor web app, using React, Redux and Jest:",
+        copy: "Built new filtering features for SafetyCulture's iAuditor web app with React, Redux and Jest:",
         link: {
           label: "safetyculture.com",
           url: "https://safetyculture.com/",
         },
       },
       {
-        copy: "Evolved the UI platform and design system of Enlitic's medical imaging product, using React, Storybook & Emotion.",
+        copy: "Worked on the UI platform and design system for Enlitic's medical imaging product, using React, Storybook and Emotion.",
       },
     ],
   },
@@ -137,21 +137,21 @@ export const experiences = [
     title: "Senior product engineer",
     tasks: [
       {
-        copy: "Built Semi Permanent's new website using TypeScript, Next.js, Framer Motion and Contentful's GraphQL API:",
+        copy: "Built Semi Permanent's new website with TypeScript, Next.js, Framer Motion and Contentful's GraphQL API:",
         link: {
           label: "semipermanent.com",
           url: "https://semipermanent.com",
         },
       },
       {
-        copy: "Prototyped and shipped Create with Google products, including Audience Connect, an Electron app adding offline videos and real-time audience interactions to Google Slides (Python, Preact, Firebase):",
+        copy: "Prototyped and shipped products for Create with Google, including Audience Connect, an Electron app that adds offline videos and real-time audience interaction to Google Slides, built with Python, Preact and Firebase:",
         link: {
           label: "create.withgoogle.com",
           url: "https://create.withgoogle.com",
         },
       },
       {
-        copy: 'Built the Qantas loyalty platform "Card Companion" in a cross-functional product team, using React, Next.js, GraphQL and Apollo:',
+        copy: 'Built "Card Companion", Qantas\' loyalty platform, as part of a cross-functional product team, with React, Next.js, GraphQL and Apollo:',
         link: {
           label: "cardcompanion.qantas.com",
           url: "https://cardcompanion.qantas.com",
@@ -167,14 +167,14 @@ export const experiences = [
     title: "Front-end developer",
     tasks: [
       {
-        copy: "Built myAudi, Audi Australia's customer loyalty portal, using React, React-Router and Redux:",
+        copy: "Built myAudi, Audi Australia's customer loyalty portal, with React, React Router and Redux:",
         link: {
           label: "myaudi.com.au",
           url: "https://myaudi.com.au/",
         },
       },
       {
-        copy: "Developed campaign websites for Audi Australia, working closely with design and strategy teams.",
+        copy: "Made campaign sites for Audi Australia, working closely with the design and strategy teams.",
       },
     ],
   },
@@ -186,14 +186,14 @@ export const experiences = [
     title: "Front-end & iOS developer",
     tasks: [
       {
-        copy: "Built the news website of TF1, France's first TV channel:",
+        copy: "Built the news website for TF1, France's biggest TV channel:",
         link: {
           label: "tf1.fr/news",
           url: "https://tf1.fr/news",
         },
       },
       {
-        copy: "Developed, with TBWA, the promotional mobile website for Paco Rabanne's Invictus fragrance, using GSAP:",
+        copy: "Teamed up with TBWA on the mobile site for Paco Rabanne's Invictus fragrance, animated with GSAP:",
         link: {
           label: "FWA case study",
           url: "https://thefwa.com/cases/invictus-award-by-paco-rabanne",
