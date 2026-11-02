@@ -210,9 +210,9 @@ export const experiences = [
 ];
 
 export const languages = [
-  "French (native)",
-  "English (fluent)",
-  "Japanese (learning)",
+  { flag: "fr", label: "French (native)" },
+  { flag: "uk", label: "English (fluent)" },
+  { flag: "jp", label: "Japanese (learning)" },
 ];
 
 export const education = [

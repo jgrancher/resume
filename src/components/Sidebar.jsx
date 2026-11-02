@@ -1,8 +1,20 @@
 import React from "react";
 import { Link, Text, View } from "@react-pdf/renderer";
 import Image from "./Image";
+import {
+  FranceFlagIcon,
+  HeartIcon,
+  JapanFlagIcon,
+  UkFlagIcon,
+} from "./Icons";
 import { languages } from "../data";
 import theme from "../theme";
+
+const flagIcons = {
+  fr: FranceFlagIcon,
+  jp: JapanFlagIcon,
+  uk: UkFlagIcon,
+};
 
 const Sidebar = () => {
   const { colors, fontSizes, fontWeights, sizes, space } = theme;
@@ -68,6 +80,10 @@ const Sidebar = () => {
             <Image src="icon-pin.png" style={imageStyles} />
             <Text>Sydney</Text>
           </View>
+          <View style={listItemStyles}>
+            <HeartIcon style={imageStyles} />
+            <Text>Tokyo</Text>
+          </View>
         </View>
         <View style={{ fontSize: fontSizes.xxxs }}>
           <Text style={{ ...titleStyles, marginTop: space.md }}>
@@ -111,11 +127,16 @@ const Sidebar = () => {
         </View>
         <View style={{ fontSize: fontSizes.xxxs }}>
           <Text style={{ ...titleStyles, marginTop: space.md }}>Languages</Text>
-          {languages.map((language) => (
-            <View key={language} style={listItemStyles}>
-              <Text>{language}</Text>
-            </View>
-          ))}
+          {languages.map(({ flag, label }) => {
+            const FlagIcon = flagIcons[flag];
+
+            return (
+              <View key={flag} style={listItemStyles}>
+                <FlagIcon style={imageStyles} />
+                <Text>{label}</Text>
+              </View>
+            );
+          })}
         </View>
         <View style={{ fontSize: fontSizes.xxxs }}>
           <Text style={{ ...titleStyles, marginTop: space.md }}>Skills</Text>
