@@ -6,6 +6,7 @@ export const experiences = [
     company: "Canva",
     date: "05/26 - Now",
     location: "Sydney",
+    logo: "icon-canva.png",
     title: "Senior software engineer",
     tasks: [
       {
@@ -24,6 +25,7 @@ export const experiences = [
     company: "Leonardo.ai",
     date: "07/24 - 05/26",
     location: "Sydney",
+    logo: "icon-leonardo.png",
     title: "Senior product engineer (web)",
     tasks: [
       {
@@ -207,7 +209,11 @@ export const experiences = [
   },
 ];
 
-export const languages = ["French (native)", "English (fluent)"];
+export const languages = [
+  "French (native)",
+  "English (fluent)",
+  "Japanese (learning)",
+];
 
 export const education = [
   {
