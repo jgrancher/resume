@@ -24,6 +24,7 @@ const Education = () => {
   };
 
   const imageStyles = {
+    marginBottom: space.xs,
     maxHeight: 22,
     objectFit: "contain",
     width: sizes.logos,
@@ -43,6 +44,12 @@ const Education = () => {
           >
             <View style={{ width: sizes.logos }}>
               <Image src={e.logo} style={imageStyles} />
+              {e.date && (
+                <Text style={{ fontSize: fontSizes.xxxxs }}>{e.date}</Text>
+              )}
+              {e.location && (
+                <Text style={{ fontSize: fontSizes.xxxxs }}>{e.location}</Text>
+              )}
             </View>
             <View wrap={false} style={{ marginLeft: space.sm, maxWidth: 312 }}>
               <Text
@@ -53,6 +60,7 @@ const Education = () => {
               >
                 {e.degree}
               </Text>
+              {e.school && <Text>{e.school}</Text>}
             </View>
           </View>
         ))}

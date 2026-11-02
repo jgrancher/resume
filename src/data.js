@@ -217,11 +217,17 @@ export const languages = [
 
 export const education = [
   {
-    logo: "icon-hetic.png",
+    date: "2009 - 2012",
     degree: "Master in Digital Communication Engineering and Management",
+    location: "Paris",
+    logo: "icon-hetic.png",
+    school: "HETIC",
   },
-  // {
-  //   logo: "icon-cesi.png",
-  //   degree: "Diploma in Information Technology",
-  // },
+  {
+    date: "2007 - 2009",
+    degree: "Higher Diploma in Software Design & Development",
+    location: "Rouen",
+    logo: "icon-cesi.png",
+    school: "CESI (formerly eXia.CESI)",
+  },
 ];
