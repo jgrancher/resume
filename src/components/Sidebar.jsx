@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Text, View } from "@react-pdf/renderer";
 import Image from "./Image";
+import { languages } from "../data";
 import theme from "../theme";
 
 const Sidebar = () => {
@@ -32,10 +33,12 @@ const Sidebar = () => {
   return (
     <View
       style={{
-        backgroundColor: colors.text,
         color: colors.white,
-        height: "100%",
+        // Only takes the first page's height, the sidebar's background being drawn by the page itself
+        height: 842 - space.md * 2,
         padding: space.sm,
+        paddingTop: 0,
+        width: sizes.sidebar + space.sm * 2,
       }}
     >
       <Image
@@ -103,71 +106,30 @@ const Sidebar = () => {
           </View>
         </View>
         <View style={{ fontSize: fontSizes.xxxs }}>
-          <Text style={{ ...titleStyles, marginTop: space.md }}>
-            Latest projects
-          </Text>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-swimming.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://www.swimming.org.au" style={linkStyles}>
-                Swimming Australia
-              </Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-semi-permanent.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://semipermanent.com" style={linkStyles}>
-                Semi Permanent
-              </Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-cwg.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://create.withgoogle.com" style={linkStyles}>
-                Create with Google
-              </Link>
-            </Text>
-          </View>
-          <View style={listItemStyles}>
-            <Image
-              src="icon-project-qcc.png"
-              style={{ ...imageStyles, width: 12 }}
-            />
-            <Text>
-              <Link src="https://cardcompanion.qantas.com" style={linkStyles}>
-                Card Companion
-              </Link>
-            </Text>
-          </View>
+          <Text style={{ ...titleStyles, marginTop: space.md }}>Languages</Text>
+          {languages.map((language) => (
+            <View key={language} style={listItemStyles}>
+              <Text>{language}</Text>
+            </View>
+          ))}
         </View>
         <View style={{ fontSize: fontSizes.xxxs }}>
           <Text style={{ ...titleStyles, marginTop: space.md }}>Skills</Text>
           <View style={listItemStyles}>
             <Image src="icon-typescript.png" style={imageStyles} />
-            <Text>JS &amp; TypeScript</Text>
+            <Text>TypeScript &amp; Node.js</Text>
           </View>
           <View style={listItemStyles}>
             <Image src="icon-react.png" style={imageStyles} />
-            <Text>React &amp; React Native</Text>
+            <Text>React &amp; Next.js</Text>
           </View>
           <View style={listItemStyles}>
             <Image src="icon-scss.png" style={imageStyles} />
-            <Text>SCSS &amp; CSS-in-JS</Text>
+            <Text>CSS &amp; design systems</Text>
           </View>
           <View style={{ ...listItemStyles, marginBottom: 0 }}>
             <Image src="icon-graphql.png" style={imageStyles} />
-            <Text>Node.js &amp; GraphQL</Text>
+            <Text>GraphQL &amp; REST APIs</Text>
           </View>
         </View>
       </View>

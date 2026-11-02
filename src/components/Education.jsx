@@ -30,7 +30,7 @@ const Education = () => {
   };
 
   return (
-    <View>
+    <View wrap={false} style={{ marginTop: space.xs }}>
       <View style={{ fontSize: fontSizes.xxxs }}>
         <Text style={titleStyles}>Education</Text>
         {education.map((e, i) => (

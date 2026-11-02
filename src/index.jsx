@@ -21,6 +21,9 @@ Font.register({
   ],
 });
 
+// Disables hyphenation, which would otherwise split long words and links
+Font.registerHyphenationCallback((word) => [word]);
+
 const App = () => {
   return (
     <PDFViewer style={{ height: "100%", width: "100%" }}>

@@ -13,7 +13,7 @@ const Document = () => {
   return (
     <DocumentPDF
       creator="Jeremy Grancher"
-      keywords="front-end, full-stack, developer, cv, resume"
+      keywords="product engineer, full-stack, front-end, developer, cv, resume"
       title="Jeremy Grancher's Resume"
     >
       <Page
@@ -21,32 +21,46 @@ const Document = () => {
         style={{
           backgroundColor: colors.white,
           color: colors.black,
-          flexDirection: "row",
           fontFamily: fonts.body,
-          padding: space.sm,
+          paddingHorizontal: space.sm,
+          paddingVertical: space.md,
         }}
       >
+        {/* Backgrounds are repeated on every page, as the content can wrap */}
         <View
+          fixed
           style={{
             backgroundColor: colors.background,
-            flexDirection: "row",
-            height: "100%",
+            bottom: space.sm,
+            left: space.sm,
+            position: "absolute",
+            right: space.sm,
+            top: space.sm,
           }}
-        >
+        />
+        <View
+          fixed
+          style={{
+            backgroundColor: colors.text,
+            bottom: space.sm,
+            left: space.sm,
+            position: "absolute",
+            top: space.sm,
+            width: sizes.sidebar + space.sm * 2,
+          }}
+        />
+        <View style={{ flexDirection: "row" }}>
           <Sidebar />
           <View
             style={{
-              padding: space.sm,
-              paddingTop: space.xs,
+              paddingHorizontal: space.sm,
               width: sizes.main,
             }}
           >
             <Header />
             <About />
-            <View style={{ flex: 1, justifyContent: "space-between" }}>
-              <Experience />
-              <Education />
-            </View>
+            <Experience />
+            <Education />
           </View>
         </View>
       </Page>

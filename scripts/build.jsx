@@ -19,4 +19,7 @@ Font.register({
   ],
 });
 
+// Disables hyphenation, which would otherwise split long words and links
+Font.registerHyphenationCallback((word) => [word]);
+
 ReactPDF.render(<Document />, `dist/Resume.pdf`);

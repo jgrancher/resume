@@ -35,9 +35,21 @@ const Experience = () => {
       <View style={{ fontSize: fontSizes.xxxs }}>
         <Text style={titleStyles}>Professional Experience</Text>
         {experiences.map((e, i) => (
-          <View key={i} style={listItemStyles}>
+          <View key={i} wrap={false} style={listItemStyles}>
             <View style={{ width: sizes.logos }}>
-              <Image src={e.logo} style={imageStyles} />
+              {e.logo ? (
+                <Image src={e.logo} style={imageStyles} />
+              ) : (
+                <Text
+                  style={{
+                    fontSize: fontSizes.xxxxs + 1,
+                    fontWeight: fontWeights.extraBold,
+                    marginBottom: space.xs,
+                  }}
+                >
+                  {e.company}
+                </Text>
+              )}
               {e.date && (
                 <Text style={{ fontSize: fontSizes.xxxxs }}>{e.date}</Text>
               )}
@@ -45,7 +57,7 @@ const Experience = () => {
                 <Text style={{ fontSize: fontSizes.xxxxs }}>{e.location}</Text>
               )}
             </View>
-            <View wrap={false} style={{ marginLeft: space.sm, maxWidth: 312 }}>
+            <View style={{ marginLeft: space.sm, maxWidth: 312 }}>
               <Text
                 style={{
                   fontWeight: fontWeights.bold,
