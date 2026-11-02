@@ -10,7 +10,7 @@ export const experiences = [
     title: "Senior software engineer",
     tasks: [
       {
-        copy: "Built Canva's official n8n node from 0 to 1: a verified community node covering the whole Canva Connect API (TypeScript, OAuth 2.0, REST), with launch workflow templates. Owned it from spec to npm release and user support:",
+        copy: "Built Canva's official n8n node from scratch: a verified community node covering the whole Canva Connect API (TypeScript, OAuth 2.0, REST), with launch workflow templates. Owned it from spec to npm release and user support:",
         link: {
           label: "n8n-nodes-canva",
           url: "https://github.com/canva-sdks/n8n-nodes-canva",
@@ -29,7 +29,7 @@ export const experiences = [
     title: "Senior product engineer (web)",
     tasks: [
       {
-        copy: 'Initiated and led "Model Matrix", a schema-driven platform where one config file drives validation, UI and API mapping, turning each new AI model launch (Veo 3.1, Nano Banana, Kling…) from bespoke code into configuration.',
+        copy: 'Initiated and led "Model Matrix", a JSON schema-driven platform where one config file drives validation, UI and API mapping, turning each new AI model launch (Veo 3.1, Nano Banana, Kling…) from bespoke code into configuration.',
       },
       {
         copy: "Set its architecture and progressive rollout across image and video generation, mentored teammates through the first implementations, and wrote the guides that let other squads add new models on their own.",
