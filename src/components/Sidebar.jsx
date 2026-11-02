@@ -3,18 +3,28 @@ import { Link, Text, View } from "@react-pdf/renderer";
 import Image from "./Image";
 import {
   ClaudeIcon,
+  DumbbellIcon,
   FranceFlagIcon,
   HeartIcon,
   JapanFlagIcon,
+  MailIcon,
+  MusicIcon,
+  SpaceInvaderIcon,
   UkFlagIcon,
 } from "./Icons";
-import { languages } from "../data";
+import { hobbies, languages } from "../data";
 import theme from "../theme";
 
 const flagIcons = {
   fr: FranceFlagIcon,
   jp: JapanFlagIcon,
   uk: UkFlagIcon,
+};
+
+const hobbyIcons = {
+  dumbbell: DumbbellIcon,
+  invader: SpaceInvaderIcon,
+  music: MusicIcon,
 };
 
 const Sidebar = () => {
@@ -47,26 +57,23 @@ const Sidebar = () => {
     <View
       style={{
         color: colors.white,
-        // Only takes the first page's height, the sidebar's background being drawn by the page itself
-        height: 842 - space.md * 2,
-        padding: space.sm,
-        paddingTop: 0,
+        paddingHorizontal: space.sm,
         width: sizes.sidebar + space.sm * 2,
       }}
     >
-      <Image
-        src="jeremy-grancher.jpg"
-        style={{
-          borderRadius: sizes.sidebar / 2,
-          marginBottom: space.sm,
-          width: sizes.sidebar,
-        }}
-      />
-      <View style={{ flexGrow: 1, justifyContent: "space-between" }}>
+      <View>
+        <Image
+          src="jeremy-grancher.jpg"
+          style={{
+            borderRadius: sizes.sidebar / 2,
+            marginBottom: space.sm,
+            width: sizes.sidebar,
+          }}
+        />
         <View style={{ fontSize: fontSizes.xxxs }}>
           <Text style={titleStyles}>Contact</Text>
           <View style={listItemStyles}>
-            <Image src="icon-mail.png" style={imageStyles} />
+            <MailIcon style={imageStyles} />
             <Text>
               <Link src="mailto:jgrancher@gmail.com" style={linkStyles}>
                 jgrancher@gmail.com
@@ -81,7 +88,7 @@ const Sidebar = () => {
             <Image src="icon-pin.png" style={imageStyles} />
             <Text>Sydney</Text>
           </View>
-          <View style={listItemStyles}>
+          <View style={{ ...listItemStyles, marginBottom: 0 }}>
             <HeartIcon style={imageStyles} />
             <Text>Tokyo</Text>
           </View>
@@ -114,7 +121,7 @@ const Sidebar = () => {
               </Link>
             </Text>
           </View>
-          <View style={listItemStyles}>
+          <View style={{ ...listItemStyles, marginBottom: 0 }}>
             <Image src="icon-linkedin.png" style={imageStyles} />
             <Text>
               <Link
@@ -126,21 +133,15 @@ const Sidebar = () => {
             </Text>
           </View>
         </View>
+      </View>
+      {/* Skills, languages & hobbies go on the second page */}
+      <View break>
         <View style={{ fontSize: fontSizes.xxxs }}>
-          <Text style={{ ...titleStyles, marginTop: space.md }}>Languages</Text>
-          {languages.map(({ flag, label }) => {
-            const FlagIcon = flagIcons[flag];
-
-            return (
-              <View key={flag} style={listItemStyles}>
-                <FlagIcon style={imageStyles} />
-                <Text>{label}</Text>
-              </View>
-            );
-          })}
-        </View>
-        <View style={{ fontSize: fontSizes.xxxs }}>
-          <Text style={{ ...titleStyles, marginTop: space.md }}>Skills</Text>
+          <Text style={titleStyles}>Skills</Text>
+          <View style={listItemStyles}>
+            <ClaudeIcon style={imageStyles} />
+            <Text>Agentic coding &amp; MCP</Text>
+          </View>
           <View style={listItemStyles}>
             <Image src="icon-typescript.png" style={imageStyles} />
             <Text>TypeScript &amp; Node.js</Text>
@@ -153,14 +154,48 @@ const Sidebar = () => {
             <Image src="icon-scss.png" style={imageStyles} />
             <Text>CSS &amp; design systems</Text>
           </View>
-          <View style={listItemStyles}>
+          <View style={{ ...listItemStyles, marginBottom: 0 }}>
             <Image src="icon-graphql.png" style={imageStyles} />
             <Text>GraphQL &amp; REST APIs</Text>
           </View>
-          <View style={{ ...listItemStyles, marginBottom: 0 }}>
-            <ClaudeIcon style={imageStyles} />
-            <Text>Agentic coding &amp; MCP</Text>
-          </View>
+        </View>
+        <View style={{ fontSize: fontSizes.xxxs }}>
+          <Text style={{ ...titleStyles, marginTop: space.md }}>Languages</Text>
+          {languages.map(({ flag, label }, i) => {
+            const FlagIcon = flagIcons[flag];
+
+            return (
+              <View
+                key={flag}
+                style={{
+                  ...listItemStyles,
+                  ...(i === languages.length - 1 && { marginBottom: 0 }),
+                }}
+              >
+                <FlagIcon style={imageStyles} />
+                <Text>{label}</Text>
+              </View>
+            );
+          })}
+        </View>
+        <View style={{ fontSize: fontSizes.xxxs }}>
+          <Text style={{ ...titleStyles, marginTop: space.md }}>Hobbies</Text>
+          {hobbies.map(({ icon, label }, i) => {
+            const HobbyIcon = hobbyIcons[icon];
+
+            return (
+              <View
+                key={icon}
+                style={{
+                  ...listItemStyles,
+                  ...(i === hobbies.length - 1 && { marginBottom: 0 }),
+                }}
+              >
+                <HobbyIcon style={imageStyles} />
+                <Text>{label}</Text>
+              </View>
+            );
+          })}
         </View>
       </View>
     </View>

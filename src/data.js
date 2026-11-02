@@ -215,6 +215,12 @@ export const languages = [
   { flag: "jp", label: "Japanese (learning)" },
 ];
 
+export const hobbies = [
+  { icon: "dumbbell", label: "Gym & running" },
+  { icon: "invader", label: "Video games" },
+  { icon: "music", label: "Electronic music" },
+];
+
 export const education = [
   {
     date: "2009 - 2012",
